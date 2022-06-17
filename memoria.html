@@ -1,73 +1,110 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jogo da Memoria</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo da Memoria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="canvas">
+      <section class="topo">
+        <img src="./img/logo.png" alt="Logo" />
+        <h1>Jogo da Memória</h1>
+      </section>
+      <section class="memory-game">
+        <div class="memory-card" data-objeto="melancia">
+          <img src="./img/1_melancia.png" alt="" class="font-face" />
+          <img src="./img/logo.png" alt="Card face" class="back-face" />
+        </div>
+        <div class="memory-card" data-objeto="melancia">
+          <img src="./img/1_triangulo.png" alt="" class="font-face" />
+          <img src="./img/logo.png" alt="Card face" class="back-face" />
+        </div>
 
-  <link rel="stylesheet" href="css/estilos.css">
-</head>
-<body>
-  
-  <section class="memory-game">
-    <div class="memory-card" data-objeto="aviao">
-      <img src="./img/aviao.png" alt="" class="font-face">
-      <img src="./img/logo.png" alt="Card face" class="back-face">
-    </div>
-    <div class="memory-card" data-objeto="aviao">
-      <img src="./img/aviao.png" alt="" class="font-face">
-      <img src="./img/logo.png" alt="Card face" class="back-face">
-    </div>
-    
-    <div class="memory-card" data-objeto="bola">
-      <img src="./img/bola.png" alt="" class="font-face">
-      <img src="./img/logo.png" alt="Card face" class="back-face">
-    </div>
-    <div class="memory-card" data-objeto="bola">
-      <img src="./img/bola.png" alt="" class="font-face">
-      <img src="./img/logo.png" alt="Card face" class="back-face">
+        <div class="memory-card" data-objeto="campo">
+          <img src="./img/2_campo.png" alt="" class="font-face" />
+          <img src="./img/logo.png" alt="Card face" class="back-face" />
+        </div>
+        <div class="memory-card" data-objeto="campo">
+          <img src="./img/2_retagulo.png" alt="" class="font-face" />
+          <img src="./img/logo.png" alt="Card face" class="back-face" />
+        </div>
+
+        <div class="memory-card" data-objeto="abacaxi">
+          <img src="./img/3_abacaxi.png" alt="" class="font-face" />
+          <img src="./img/logo.png" alt="Card face" class="back-face" />
+        </div>
+        <div class="memory-card" data-objeto="abacaxi">
+          <img src="./img/3_oval.png" alt="" class="font-face" />
+          <img src="./img/logo.png" alt="Card face" class="back-face" />
+        </div>
+
+        <div class="memory-card" data-objeto="dados">
+          <img src="./img/4_dados.png" alt="" class="font-face" />
+          <img src="./img/logo.png" alt="Card face" class="back-face" />
+        </div>
+        <div class="memory-card" data-objeto="dados">
+          <img src="./img/4_quadrado.png" alt="" class="font-face" />
+          <img src="./img/logo.png" alt="Card face" class="back-face" />
+        </div>
+
+        <div class="memory-card" data-objeto="balao">
+          <img src="./img/5_balao.png" alt="" class="font-face" />
+          <img src="./img/logo.png" alt="Card face" class="back-face" />
+        </div>
+        <div class="memory-card" data-objeto="balao">
+          <img src="./img/5_losango.png" alt="" class="font-face" />
+          <img src="./img/logo.png" alt="Card face" class="back-face" />
+        </div>
+
+        <div class="memory-card" data-objeto="bola">
+          <img src="./img/6_bola.png" alt="" class="font-face" />
+          <img src="./img/logo.png" alt="Card face" class="back-face" />
+        </div>
+        <div class="memory-card" data-objeto="bola">
+          <img src="./img/6_circulo.png" alt="" class="font-face" />
+          <img src="./img/logo.png" alt="Card face" class="back-face" />
+        </div>
+
+        <div class="memory-card" data-objeto="casa">
+          <img src="./img/7_casa.png" alt="" class="font-face" />
+          <img src="./img/logo.png" alt="Card face" class="back-face" />
+        </div>
+        <div class="memory-card" data-objeto="casa">
+          <img src="./img/7_pentagono.png" alt="" class="font-face" />
+          <img src="./img/logo.png" alt="Card face" class="back-face" />
+        </div>
+
+        <div class="memory-card" data-objeto="bolsa">
+          <img src="./img/8_bolsa.png" alt="" class="font-face" />
+          <img src="./img/logo.png" alt="Card face" class="back-face" />
+        </div>
+        <div class="memory-card" data-objeto="bolsa">
+          <img src="./img/8_trapezio.png" alt="" class="font-face" />
+          <img src="./img/logo.png" alt="Card face" class="back-face" />
+        </div>
+      </section>
+
+      <section class="botoes">
+        <a href="index.html" class="btn">Voltar</a>
+        <a href="memoria.html" class="btn">Jogar Novamente</a>
+      </section>
     </div>
 
-    <div class="memory-card" data-objeto="carro">
-      <img src="./img/carro.png" alt="" class="font-face">
-      <img src="./img/logo.png" alt="Card face" class="back-face">
-    </div>
-    <div class="memory-card" data-objeto="carro">
-      <img src="./img/carro.png" alt="" class="font-face">
-      <img src="./img/logo.png" alt="Card face" class="back-face">
-    </div>
-    
-    <div class="memory-card" data-objeto="chapeu">
-      <img src="./img/chapeu.webp" alt="" class="font-face">
-      <img src="./img/logo.png" alt="Card face" class="back-face">
-    </div>
-    <div class="memory-card" data-objeto="chapeu">
-      <img src="./img/chapeu.webp" alt="" class="font-face">
-      <img src="./img/logo.png" alt="Card face" class="back-face">
-    </div>
-
-    <div class="memory-card" data-objeto="xicara">
-      <img src="./img/xicara.png" alt="" class="font-face">
-      <img src="./img/logo.png" alt="Card face" class="back-face">
-    </div>
-    <div class="memory-card" data-objeto="xicara">
-      <img src="./img/xicara.png" alt="" class="font-face">
-      <img src="./img/logo.png" alt="Card face" class="back-face">
-    </div>
-
-    <div class="memory-card" data-objeto="estrela">
-      <img src="./img/estrela.png" alt="" class="font-face">
-      <img src="./img/logo.png" alt="Card face" class="back-face">
-    </div>
-    <div class="memory-card" data-objeto="estrela">
-      <img src="./img/estrela.png" alt="" class="font-face">
-      <img src="./img/logo.png" alt="Card face" class="back-face">
-    </div>
-
-    
-  </section>
-
-  <script src="js/app_memoria.js"></script>
-</body>
+    <script src="js/app_memoria.js"></script>
+  </body>
 </html>

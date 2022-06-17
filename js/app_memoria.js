@@ -3,6 +3,8 @@ const cards = document.querySelectorAll('.memory-card');
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
+let totalJogadas = 0;
+let totalAcertos = 0;
 
 function flipCard() {
   if (lockBoard) return;
@@ -15,7 +17,7 @@ function flipCard() {
     firstCard = this;
     return;
   }
-
+  
   secondCard = this;
 
   checkForMatch();
@@ -23,11 +25,14 @@ function flipCard() {
 
 function checkForMatch() {
 
-  console.log('aqui')
-  console.log(firstCard.dataset.objeto)
-  console.log(secondCard.dataset.objeto)
-
   if (firstCard.dataset.objeto === secondCard.dataset.objeto) {
+    totalAcertos += 1;
+    if (totalJogadas === totalAcertos) {
+      setTimeout(function(){
+        alert('Parabéns! Você venceu!');
+        window.location.reload();
+      }, 900);
+    }
     disableCards();
     return;
   }
@@ -38,7 +43,7 @@ function checkForMatch() {
 function disableCards() {
   firstCard.removeEventListener('click', flipCard);
   secondCard.removeEventListener('click', flipCard);
-
+  console.log('total acertos: ', totalAcertos);
   resetBoard();
 }
 
@@ -62,6 +67,8 @@ function resetBoard() {
     let randomPos = Math.floor(Math.random() * 12);
     card.style.order = randomPos;
   })
+  totalJogadas = (cards.length / 2);
+  console.log('total de jogadas: ', totalJogadas);
 })();
 
 cards.forEach(card => card.addEventListener('click', flipCard));
