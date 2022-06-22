@@ -109,3 +109,51 @@ body {
   color: #311D14;
   text-decoration: none;
 }
+
+/**
+ * JOGO DE MONTAR AS PEÇAS
+ **/
+ .canvas2 {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+ .memory-game-2 {
+   width: 100%;
+   margin: 0 auto;
+ } 
+ .listaObjetos {
+   width: 100%;
+ }
+ .listaFormas {
+   width: 100%;
+   text-align: right;
+ }
+ 
+ .listaObjetos ul, .listaFormas ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  .listaObjetos ul li, .listaFormas ul li {
+    padding: 5px 0;
+    display: inline-flex;
+  }
+  .listaObjetos ul li {
+    border: 1px solid #dde4da;
+    background-color: #dde4da;
+    border-radius: 5px;
+    margin: 5px 0;
+    padding: 15px 10px;
+    height: 200px;
+  }
+
+ .listaFormas img, .listaObjetos img {
+   width: 80px;
+   height: 80px;
+ }
+ .ui-state-highlight {
+   background-color: #648a1b !important;
+   border: none !important;
+ }
