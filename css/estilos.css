@@ -9,6 +9,19 @@ body {
   background-color: #C3D0BE;
   font-family: 'Fredoka One', cursive;
 }
+.linha {
+  width: 100%;
+  display: flex;
+}
+.col-1 {
+  width: 100%;
+}
+.col-2 {
+  width: 50%;
+}
+.text-center {
+  text-align: center;
+}
 .canvas {
   width: 640px;
   display: flex;
@@ -22,15 +35,20 @@ body {
   align-items: center;
   margin: 10px 0;
 }
-.topo img {
-  width: 85px;
-  height: 85px;
+img.logo-topo {
+  width: 100px;
+  height: 100px;
   margin-bottom: 10px;
 }
-.topo h1 {
+h1, h2, h3 {
   font-family: 'Pacifico', cursive;
   color: #311D14;
-  font-size: 26px;
+}
+h1 {
+  font-size: 46px;
+}
+img.mascote {
+  width: 95%;
 }
 .memory-game {
   position: relative;
@@ -42,7 +60,6 @@ body {
   flex-wrap: wrap;
   perspective: 1000px;
 }
-
 .memory-card {
   width: calc(25% - 10px);
   height: calc(20% - -20px);
@@ -144,7 +161,7 @@ body {
     border: 1px solid #dde4da;
     background-color: #dde4da;
     border-radius: 5px;
-    margin: 5px 0;
+    margin: 5px;
     padding: 15px 10px;
     height: 200px;
   }
